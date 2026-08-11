@@ -25,11 +25,11 @@ const Button = ({ text, className, id }) => {
           window.scrollTo({ top, behavior: "smooth" });
         }
       }}
-      className={`${className ?? ""} cta-wrapper`} // Add base + extra class names
+      className={`${className ?? ""} cta-wrapper group`} // Add base + extra class names and group for hover
     >
       <div className="cta-button group">
         <div className="bg-circle" />
-        <p className="text">{text}</p>
+        <p className="text text-white">{text}</p>
         <div className="arrow-wrapper">
           <img src="/images/arrow-down.svg" alt="arrow" />
         </div>
