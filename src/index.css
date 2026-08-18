@@ -9,8 +9,8 @@ html,
 body {
   width: 100dvw;
   overflow-x: hidden;
-  background-color: black;
-  color: white;
+  background-color: #faf8f3;
+  color: #2c2416;
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
 }
@@ -21,12 +21,12 @@ section {
 
 :root {
   --font-sans: "Mona Sans", sans-serif;
-  --color-white-50: #d9ecff;
-  --color-black-50: #1c1c21;
-  --color-black-100: #0e0e10;
-  --color-black-200: #282732;
-  --color-blue-50: #839cb5;
-  --color-blue-100: #2d2d38;
+  --color-white-50: #ffffff;
+  --color-black-50: #e8e0d5;
+  --color-black-100: #f5f0e8;
+  --color-black-200: #d4c5b0;
+  --color-blue-50: #b8a896;
+  --color-blue-100: #c9b8a1;
 }
 
 .flex-center {
@@ -296,7 +296,7 @@ section {
 
 .navbar.scrolled {
   top: 0;
-  background-color: black;
+  background-color: #faf8f3;
 }
 
 .navbar.not-scrolled {
@@ -318,7 +318,7 @@ section {
 }
 
 .navbar .logo {
-  color: var(--color-white-50);
+  color: #2c2416;
   font-size: 1.25rem;
   font-weight: 600;
   transition: transform 300ms ease-in-out;
@@ -354,7 +354,7 @@ section {
 }
 
 .navbar nav.desktop ul li {
-  color: var(--color-white-50);
+  color: #2c2416;
   position: relative;
 }
 
@@ -363,7 +363,7 @@ section {
 }
 
 .navbar nav.desktop ul li span:hover {
-  color: white;
+  color: #8b6f47;
 }
 
 .navbar nav.desktop ul li .underline {
@@ -372,7 +372,7 @@ section {
   left: 0;
   width: 0;
   height: 0.125rem;
-  background-color: white;
+  background-color: #d4a574;
   transition: all 300ms ease-in-out;
 }
 
@@ -387,8 +387,8 @@ section {
 .navbar .contact-btn .inner {
   padding: 0.5rem 1.25rem;
   border-radius: 0.5rem;
-  background-color: white;
-  color: black;
+  background-color: #d4a574;
+  color: white;
   transition: background-color 300ms ease-in-out;
 }
 
@@ -397,7 +397,7 @@ section {
 }
 
 .group:hover .navbar .contact-btn .inner {
-  background-color: var(--color-black-50);
+  background-color: #8b6f47;
 }
 
 .group:hover .navbar .contact-btn .inner span {
@@ -583,7 +583,7 @@ section {
 .cta-button {
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: var(--color-black-200);
+  background-color: #d4a574;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -600,7 +600,7 @@ section {
   width: 120%;
   height: 120%;
   border-radius: 9999px;
-  background-color: var(--color-white-50);
+  background-color: #8b6f47;
   transition: all 500ms ease-in-out;
 }
 
@@ -612,7 +612,7 @@ section {
 
 .cta-button .text {
   text-transform: uppercase;
-  color: black;
+  color: #fff;
   transition: all 500ms ease-in-out;
 }
 
