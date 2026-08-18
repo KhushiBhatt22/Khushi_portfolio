@@ -1,3 +1,13 @@
+/**
+ * ExpContent Component
+ * 
+ * Displays a single experience/job card with title, date, and responsibilities.
+ * Used in the Experience section to showcase work history.
+ * 
+ * Props:
+ *   - expContent (object): Contains { title, date, responsibilities[] }
+ */
+
 const ExpContent = ({ expContent }) => {
   return (
     <div className="card-border rounded-xl p-10">
