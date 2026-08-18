@@ -1,3 +1,14 @@
+/**
+ * TitleHeader Component
+ * 
+ * A reusable component that creates section headers with a subtitle badge and main title.
+ * Used throughout the portfolio to display section titles like "Experience", "Skills", "Projects", etc.
+ * 
+ * Props:
+ *   - title (string): The main heading text
+ *   - sub (string): The subtitle/badge text displayed above the title
+ */
+
 const TitleHeader = ({ title, sub }) => {
   return (
     <div className="flex flex-col items-center gap-5">
