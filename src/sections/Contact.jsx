@@ -9,7 +9,7 @@ const Contact = () => (
         <div className="contact-card-content">
           <div className="contact-icon" aria-hidden="true">✉</div>
           <p className="contact-intro">
-            I’m actively seeking software engineering opportunities and would love to connect about ideas, roles, and collaborations.
+            I’m actively seeking software engineering opportunities and would love to connect about ideas, roles, and collaborations. Please don't hesitate to reach out to me or simply say hello!
           </p>
           <div className="contact-detail">
             <h2>Email</h2>
