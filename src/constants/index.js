@@ -136,39 +136,36 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Khushi brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review:
+      "Pletheon Technologies gave me the opportunity to build cloud data pipelines and modern internal systems using Python, AWS, C#, Angular, and PostgreSQL.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Software Engineer Intern",
-    date: "May 2026 - Present",
+    title: "Pletheon Technologies | Software Engineer Intern | Canada",
+    date: "Apr 2026 – Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Client website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Built Python + AWS data pipelines and a broker CMS in VS Code and Visual Studio using C#, Angular, PostgreSQL, and Azure to migrate MLS data and simplify broker operations.",
     ],
   },
+  // {
+  //   review:
+  //     "At Saje Natural Wellness, I combined operational leadership with data-driven retail insights to improve performance and team execution.",
+  //   imgPath: "/images/exp2.png",
+  //   logoPath: "/images/logo2.png",
+  //   title: "Saje Natural Wellness | Team Leader | Canada",
+  //   date: "Aug 2024 – Present",
+  //   responsibilities: [
+  //     "Lead daily retail operations by supervising team members, managing sales and store performance, and ensuring a positive customer experience while meeting company goals.  ",
+  //   ],
+  // },
   {
-    review: "Khushi’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
-    responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
-  },
-  {
-    review: "Khushi’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review:
+      "At Blobstation Inc., I focused on QA engineering, test automation, and defect reduction across web application workflows.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Blobstation Inc. | Quality Assurance Engineer | India",
+    date: "Jun 2023 – Jan 2024",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Designed and executed automated QA test cases in VS Code using Selenium, Postman, and testing frameworks to improve release quality and reduce defects across web applications.",
     ],
   },
 ];
