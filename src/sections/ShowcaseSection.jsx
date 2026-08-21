@@ -63,7 +63,7 @@ const AppShowcase = () => {
   return (
     <section id="projects" className="app-showcase">
       <div className="w-full">
-        <TitleHeader title="Projects" sub="🚀 My Work" />
+        <TitleHeader title="Projects" sub="My Work" />
 
         <div className="project-scroll-wrapper">
           {projects.map((project) => (
