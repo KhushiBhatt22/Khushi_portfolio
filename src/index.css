@@ -669,6 +669,9 @@ section {
 }
 
 .project-details-btn {
+ display: inline-flex;
+  align-items: center;
+  gap: 8px;
   margin-top: 1.4rem;
   width: fit-content;
   border: none;
@@ -681,8 +684,19 @@ section {
   text-decoration: none;
 }
 
-.project-details-btn span {
-  font-size: 1.25rem;
+.project-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.project-arrow svg {
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 
 .project-modal-overlay {
