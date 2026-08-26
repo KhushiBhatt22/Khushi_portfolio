@@ -88,7 +88,7 @@ const AppShowcase = () => {
 
       {selectedProject && (
         <div className="project-modal-overlay" onClick={() => setSelectedProject(null)}>
-          <div className="project-modal" onClick={(e) => e.stopPropagation()}>
+          <div className="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title" onClick={(e) => e.stopPropagation()}>
             <button
               type="button"
               className="project-modal-close"
@@ -98,7 +98,7 @@ const AppShowcase = () => {
               ×
             </button>
 
-            <h2>{selectedProject.title}</h2>
+            <h2 id="project-modal-title">{selectedProject.title}</h2>
 
             <div className="project-modal-meta">
               {selectedProject.tech.map((item) => (
