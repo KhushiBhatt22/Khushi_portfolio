@@ -2,7 +2,7 @@ import TitleHeader from "../components/TitleHeader";
 
 const Contact = () => (
   <section id="contact" className="flex-center section-padding">
-    <div className="w-full h-full md:px-10 px-5">
+      <div className="w-full h-full md:px-10 px-0">
       <TitleHeader title="Let’s Connect" sub="Open to new opportunities" />
       <div className="contact-card mt-16">
         <div className="contact-map-pattern" aria-hidden="true" />
