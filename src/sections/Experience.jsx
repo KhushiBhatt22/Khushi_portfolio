@@ -27,15 +27,23 @@ const timelineEntries = [
 
 const Experience = () => (
   <section id="experience" className="flex-center section-padding xl:px-0">
-    <div className="w-full h-full md:px-20 px-5">
+    <div className="w-full h-full md:px-20 px-0">
       <TitleHeader title="Career Timeline" sub="My journey so far" />
       <div className="career-timeline mt-20">
         <div className="career-timeline-line" aria-hidden="true" />
         <div className="career-timeline-items">
           {timelineEntries.map((entry, index) => (
-            <article key={`${entry.title}-${entry.date}`} className={`career-timeline-item ${index % 2 ? "is-right" : "is-left"}`}>
+            <article 
+            key={`${entry.title}-${entry.date}`} 
+            className={`career-timeline-item ${index % 2 ? "is-right" : "is-left"}`}>
               <div className="career-timeline-marker" aria-hidden="true">{entry.type === "Education" ? "✦" : "●"}</div>
-              <div className="career-card">
+              <div
+                className={`career-card ${
+                  entry.type === "Education"
+                    ? "career-card-education"
+                    : "career-card-experience"
+                }`}
+              >
                 <div className="career-card-topline">
                   <span className={`career-type ${entry.type === "Education" ? "education" : ""}`}>{entry.type}</span>
                   <span className="career-date">▣ {entry.date}</span>
