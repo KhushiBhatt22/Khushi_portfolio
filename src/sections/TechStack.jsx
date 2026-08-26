@@ -58,7 +58,7 @@ const skillGroups = [
 const TechStack = () => {
   return (
     <div id="skills" className="flex-center section-padding">
-      <div className="w-full h-full md:px-10 px-5">
+      <div className="w-full h-full md:px-10 px-0">
         <TitleHeader title="Skills" sub="My Core Stack" />
 
         <div
