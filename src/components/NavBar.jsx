@@ -5,6 +5,7 @@ import { navLinks } from "../constants";
 const NavBar = () => {
   // track if the user has scrolled down the page
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     // create an event listener for when the user scrolls
@@ -29,7 +30,7 @@ const NavBar = () => {
           Khushi Bhatt
         </a>
 
-        <nav className="desktop">
+        <nav className="desktop" aria-label="Primary navigation">
           <ul>
             {navLinks.map(({ link, name }) => (
               <li key={name} className="group">
@@ -47,7 +48,32 @@ const NavBar = () => {
             <span>Contact me</span>
           </div>
         </a>
+
+        <button
+          type="button"
+          className="mobile-menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((isOpen) => !isOpen)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </div>
+
+      <nav className={`mobile-menu ${menuOpen ? "is-open" : ""}`} aria-label="Mobile navigation">
+        <ul>
+          {navLinks.map(({ link, name }) => (
+            <li key={name}>
+              <a href={link} onClick={() => setMenuOpen(false)}>{name}</a>
+            </li>
+          ))}
+          <li>
+            <a href="#contact" onClick={() => setMenuOpen(false)}>Contact me</a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
