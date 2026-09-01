@@ -30,6 +30,19 @@ const projects = [
     githubUrl: "https://github.com/KhushiBhatt22/solva_chemicals",
   },
   {
+    category: "Frontend",
+    title: "Personal Portfolio",
+    description:
+      "A responsive personal portfolio website for showcasing projects, career experience, technical skills, and contact details.",
+    type: "Frontend development",
+    purpose: "Personal Project",
+    summary:
+      "This React portfolio is a reusable template with responsive navigation, an animated GSAP hero, featured projects, a career timeline, grouped skills, and email and social contact links. It is built with React 19, Vite 8, Tailwind CSS, and custom CSS, with optional Three.js and React Three Fiber for interactive 3D in the hero.",
+    tech: ["React 19", "Vite 8", "Tailwind CSS", "GSAP", "Three.js", "React Three Fiber", "ESLint", "Vercel"],
+    liveUrl: "https://khushibhatt-one.vercel.app/",
+    githubUrl: "https://github.com/KhushiBhatt22/Khushi_portfolio",
+  },
+  {
     category: "Fullstack",
     title: "TripTo",
     description:
@@ -134,18 +147,28 @@ const AppShowcase = () => {
               </div>
               <div>
                 <h3>GitHub Repository</h3>
-                <a href={selectedProject.githubUrl} target="_blank" rel="noreferrer">
-                  GitHub
+                <a
+                  className="project-modal-link"
+                  href={selectedProject.githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View on GitHub
                 </a>
               </div>
               <div>
                 <h3>Live Preview</h3>
                 {selectedProject.liveUrl && selectedProject.liveUrl !== "#" ? (
-                  <a href={selectedProject.liveUrl} target="_blank" rel="noreferrer">
-                    Live
+                  <a
+                    className="project-modal-link"
+                    href={selectedProject.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Open live site
                   </a>
                 ) : (
-                  <p>Not available</p>
+                  <p className="project-modal-unavailable">Not available</p>
                 )}
               </div>
             </div>
