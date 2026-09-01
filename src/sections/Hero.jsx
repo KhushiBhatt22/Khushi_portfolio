@@ -56,8 +56,8 @@ const Hero = () => {
             </p>
 
             <Button
-              text="See My Work"
-              className="md:w-80 md:h-16 w-60 h-12"
+              text="Explore Projects"
+              className="hero-cta hidden md:block md:w-80 md:h-16"
               id="projects"
             />
           </div>
