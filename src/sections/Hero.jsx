@@ -55,11 +55,11 @@ const Hero = () => {
               code.
             </p>
 
-            <Button
+            {/* <Button
               text="Explore Projects"
               className="hero-cta hidden md:block md:w-80 md:h-16"
               id="projects"
-            />
+            /> */}
           </div>
         </header>
 
