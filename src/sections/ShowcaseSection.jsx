@@ -3,6 +3,19 @@ import { useState } from "react";
 import TitleHeader from "../components/TitleHeader";
 
 const projects = [
+   {
+    category: "Full Stack",
+    title: "Aloha Agentics",
+    description: 
+    "Aloha Client Site is an Angular web application for managing authentication, accounts, and social media posting integrations through an external API.",
+    type: "Frontend development",
+    purpose: "Business website",
+    summary:
+    "Aloha Client Site is an Angular web application that manages user authentication and authorization for social media posting integrations. It connects to an external API and supports LinkedIn, Facebook, Instagram, image generation, text generation, and account management features.",
+    tech: ["Angular 18", "TypeScript 5.5", "Bootstrap 5", "Angular Material/CDK", "RxJS", "Zone.js", "Github Actions", "Azure Static Web Apps"],
+    liveUrl: "https://client.alohaagentics.org/",
+    githubUrl: "https://github.com/aloha-agentics/aloha-client-site",
+  },
   {
     category: "Fullstack",
     title: "Bookstagram",
@@ -42,6 +55,7 @@ const projects = [
     liveUrl: "https://khushibhatt-one.vercel.app/",
     githubUrl: "https://github.com/KhushiBhatt22/Khushi_portfolio",
   },
+
   {
     category: "Fullstack",
     title: "TripTo",
